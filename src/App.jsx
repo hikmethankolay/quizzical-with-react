@@ -102,6 +102,7 @@ function App() {
     <div className='App'>
       {!gameStart && <Start handleClick={StartGame} />}
       {gameStart && questionsArray}
+      {gameStart && !showResults &&  <div className='check-answers-button-container'><button onClick={checkAnswers} className='check-answers-button'>Check Answers</button></div>}
       {showResults && <div className='play-again-container'>
         <p className='score-text'>{scoreText}</p>
         <button onClick={playAgain} className='play-again-button'>Play again</button>

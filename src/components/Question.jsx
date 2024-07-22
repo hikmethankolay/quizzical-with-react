@@ -28,7 +28,6 @@ export default function Question(props) {
               </div>
             );
           })}
-          { !props.showResults && <button className='check-answers-button' type="submit">Check Answers</button>}
         </form>
       <hr className="question-line"></hr>
     </div>

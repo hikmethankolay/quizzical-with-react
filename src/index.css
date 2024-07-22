@@ -3,17 +3,13 @@
 }
 
 body{
-    margin: 0px;
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-.app{
-    position: relative;
-}
+
 .start-menu-container{
     display: flex;
     flex-direction: column;
@@ -32,13 +28,13 @@ body{
 .desc{
     font-size: 16px;
     font-family: Karla;
-    line-height: auto;
     color: #293264;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .start-button{
-    width: 12vw;
+    width: 30vw;
     height: 7.5vh;
     border-radius: 15px;
     background-color: #4D5B9E;
@@ -72,9 +68,9 @@ input[type="radio"] {
     font-family: Karla;
     font-size: 16px;
     font-weight: bold;
-    text-align: left;
     color: #293264;
     margin-top: 5px;
+    text-align: center;
 }
 
 .question-line{
@@ -84,7 +80,7 @@ input[type="radio"] {
 .answer-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .answer-label-container {
@@ -96,8 +92,8 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6vw;
-    height: 2vw;
+    width: 20vw;
+    height: 7vh;
     border: 2px solid #4D5B9E;
     border-radius: 8px;
     font-family: 'Inter';
@@ -113,10 +109,15 @@ input[type="radio"] {
     border: none;
 }
 
+.check-answers-button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
 .check-answers-button{
-    position: absolute;
-    width: 12vw;
-    height: 7.5vh;
+    width: 200px;
+    height: 75px;
     border-radius: 15px;
     background-color: #4D5B9E;
     font-family: Inter;
@@ -125,10 +126,6 @@ input[type="radio"] {
     border: none;
     color: white;
     cursor: pointer;
-    bottom: 12vh;
-    left: 44vw;
-    cursor: pointer;
-
 }
 
 .check-answers-button:hover{
@@ -150,8 +147,8 @@ input[type="radio"] {
 }
 
 .play-again-button{
-    width: 12vw;
-    height: 7.5vh;
+    width: 200px;
+    height: 75px;
     border-radius: 15px;
     background-color: #4D5B9E;
     font-family: Inter;
@@ -160,6 +157,15 @@ input[type="radio"] {
     border: none;
     color: white;
     cursor: pointer;
+    margin-left: 100px;
+}
+
+.play-again-button:hover{
+    background-color: #3c467b;
+}
+
+.play-again-button:active{
+    background-color: #2b3359;
 }
 
 .score-text{
@@ -169,12 +175,12 @@ input[type="radio"] {
     text-align: left;
     color: #293264;
     margin-top: 5px;
+    margin-right: -70px;
 }
 
 .play-again-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
     margin-top: 30px;
 }
